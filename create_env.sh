@@ -8,6 +8,7 @@ echo "creating env = $ENV_NAME"
 conda create -n $ENV_NAME --copy python=2.7 jupyter pandas
 source activate $ENV_NAME
 conda install --copy -c conda-forge mrjob=0.5.5
+conda install --copy -c conda-forge matplotlib=2.0.2
 cd .conda/envs/$ENV_NAME/
 zip -r ~/$ENV_NAME.zip *
 cd ~
