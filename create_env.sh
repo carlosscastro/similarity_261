@@ -10,7 +10,7 @@ source activate $ENV_NAME
 conda install --copy -c conda-forge mrjob=0.5.5
 conda install --copy -c conda-forge matplotlib=2.0.2
 conda install --copy -c anaconda nltk=3.2.4
-cd .conda/envs/$ENV_NAME/
+cd /home/$USERNAME/.conda/envs/$ENV_NAME/
 zip -r ~/$ENV_NAME.zip *
 cd ~
 hdfs dfs -mkdir /user/$USERNAME/virtualenv/
